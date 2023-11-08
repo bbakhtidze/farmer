@@ -20,7 +20,11 @@
   display: flex;
 }
 
+.navbar {
+  text-align: center;
+}
 .ul-item {
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
