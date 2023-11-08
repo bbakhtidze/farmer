@@ -1,22 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .logo {
   background-color: aqua;
   display: inline-block;
   width: 150px;
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-
-
 .navigation {
   background-color: aqua;
   display: inline-block;
   width: 800px;
 }
-/* .ul-item {
-  display: inline;
-  position: relative;
-} */
+
 .li-item {
   display: inline-block;
-  margin: 10px;
+  margin: auto;
 }
