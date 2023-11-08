@@ -6,7 +6,7 @@
 */
 .cover {
   width: auto;
-  background-color: yellow;
+  /* background-color: yellow; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -24,11 +24,16 @@
 .ul-item {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 30px;
 }
+
 .li-item {
   font-size: 25px;
   display: inline-block;
   padding: 10px;
   /* display: flex;
   flex-wrap: wrap; */
+}
+.active-red {
+  color: brown;
 }
