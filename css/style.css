@@ -4,14 +4,24 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 .cover {
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .logo {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -22,12 +32,24 @@
 
 .navbar {
   text-align: center;
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
 }
 .ul-item {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 30px;
+  overflow: hidden;
+  /* background-color: #333; */
+  font-family: Arial;
 }
 
 .li-item {
@@ -39,4 +61,66 @@
 }
 .active-red {
   color: brown;
+}
+
+.order {
+  float: left;
+  overflow: hidden;
+  margin: 10px;
+}
+
+/* Dropdown button */
+.order {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  /* color: white; */
+  padding: 14px 16px;
+  /* background-color: inherit;
+  font-family: inherit; Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.navbar a:hover,
+.order:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.order-content {
+  display: none;
+  position: absolute;
+  /* background-color: #f9f9f9; */
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.order-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.order:hover .order-content {
+  display: block;
+  Add
+    a
+    grey
+    background
+    color
+    to
+    dropdown
+    links
+    on
+    hover
+    .order-content
+    .a:hover:hover {
+    background-color: #ddd;
+  }
 }
