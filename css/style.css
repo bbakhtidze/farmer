@@ -1,11 +1,24 @@
 .logo {
+  background-color: aqua;
+  display: inline-block;
   width: 150px;
   height: 150px;
+}
 /* }
 body {
   background-color: antiquewhite;
 } */
+
 .navigation {
-  width: 800px;
   background-color: aqua;
+  display: inline-block;
+  width: 800px;
+}
+/* .ul-item {
+  display: inline;
+  position: relative;
+} */
+.li-item {
+  display: inline-block;
+  margin: 10px;
 }
