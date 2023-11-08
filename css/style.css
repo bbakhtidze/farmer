@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 .cover {
-  /* width: 1200px; */
+  width: auto;
   background-color: yellow;
   display: flex;
   flex-wrap: wrap;
