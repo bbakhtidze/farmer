@@ -14,13 +14,22 @@
   display: -ms-flexbox;
   display: flex;
 }
-.navigation {
-  background-color: aqua;
+
+.ul-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.li-item {
+  font-size: 25px;
   display: inline-block;
-  width: 800px;
+  padding: 10px;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
-.li-item {
-  display: inline-block;
-  margin: auto;
+.cover {
+  /* width: 1200px; */
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
 }
