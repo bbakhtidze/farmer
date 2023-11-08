@@ -1,7 +1,11 @@
 .logo {
   width: 150px;
   height: 150px;
-}
+/* }
 body {
   background-color: antiquewhite;
+} */
+.navigation {
+  width: 800px;
+  background-color: aqua;
 }
