@@ -124,3 +124,8 @@
     background-color: #ddd;
   }
 }
+
+.chiken {
+  width: 250px;
+  align-items: center;
+}
