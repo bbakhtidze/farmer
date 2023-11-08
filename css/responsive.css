@@ -5,6 +5,10 @@
   .logo {
     align-items: center;
   }
+  .chiken {
+    width: 60px;
+    align-items: center;
+  }
   /* body {
     background-color: antiquewhite;
   }

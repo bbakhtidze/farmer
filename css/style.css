@@ -128,4 +128,9 @@
 .chiken {
   width: 250px;
   align-items: center;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+p {
+  margin-left: 25%;
 }
