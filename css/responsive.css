@@ -8,6 +8,13 @@
   .chiken {
     width: 60px;
     align-items: center;
+    margin-left: 50%;
+  }
+  .logo {
+    margin-left: 50%;
+  }
+  p {
+    margin-left: 25%;
   }
   /* body {
     background-color: antiquewhite;
