@@ -4,6 +4,12 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+.cover {
+  /* width: 1200px; */
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .logo {
   background-color: aqua;
@@ -25,11 +31,4 @@
   padding: 10px;
   /* display: flex;
   flex-wrap: wrap; */
-}
-
-.cover {
-  /* width: 1200px; */
-  background-color: yellow;
-  display: flex;
-  flex-wrap: wrap;
 }
