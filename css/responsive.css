@@ -5,30 +5,35 @@
   .cover {
     width: auto;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
   }
   .logo {
     align-items: center;
+    width: 30%;
+    margin: auto;
   }
   .chiken {
     width: 60px;
     align-items: center;
     margin-left: 50%;
   }
-  .logo {
-    margin-left: 70%;
-  }
 
   .main-block {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
-    /* width: auto; */
-    /* margin: auto;
-  padding: auto; */
-    /* align-items: center; */
+    padding-top: 10px;
   }
   .box {
     width: 80px;
     height: 80px;
-    align-items: center;
+    margin-top: 10px;
+     
+  }
+  .li-item {
+    font-size: 15px;
+
+    padding: 10px;
   }
 }
