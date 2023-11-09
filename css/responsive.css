@@ -1,6 +1,10 @@
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .order-item {
     margin-top: 150px;
+  }
+  .cover {
+    width: auto;
+    align-items: center;
   }
   .logo {
     align-items: center;

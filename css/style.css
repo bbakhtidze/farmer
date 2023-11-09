@@ -1,7 +1,7 @@
 .cover {
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
+  /* height: auto; */
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -121,4 +121,12 @@
 }
 p {
   margin-left: 25%;
+}
+.chik-box {
+  display: flex;
+}
+footer {
+  background-color: bisque;
+  height: 30px;
+  width: auto;
 }
