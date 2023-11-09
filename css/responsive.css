@@ -21,7 +21,7 @@
   .main-block {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
+    /* width: auto; */
     /* margin: auto;
   padding: auto; */
     /* align-items: center; */
