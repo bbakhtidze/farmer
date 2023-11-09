@@ -17,4 +17,18 @@
   .logo {
     margin-left: 70%;
   }
+
+  .main-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    /* margin: auto;
+  padding: auto; */
+    /* align-items: center; */
+  }
+  .box {
+    width: 80px;
+    height: 80px;
+    align-items: center;
+  }
 }
