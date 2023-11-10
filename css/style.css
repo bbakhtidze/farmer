@@ -61,8 +61,6 @@ ul {
   padding: 10px;
 }
 
-
-
 .order {
   float: left;
   overflow: hidden;
@@ -153,6 +151,7 @@ footer {
   width: auto;
 }
 .main-block {
+  margin-top: 20px;
   align-items: center;
   /* width: auto; */
   display: -webkit-box;
@@ -202,6 +201,6 @@ footer {
   height: auto;
 }
 
-h1{
+h1 {
   font-size: 25px;
 }
