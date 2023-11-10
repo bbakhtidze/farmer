@@ -115,15 +115,19 @@
 
 .chiken {
   width: 250px;
-  align-items: center;
-  margin-left: 25%;
-  margin-top: 10%;
+  /* margin-left: 25%;
+  margin-top: 10%; */
 }
 p {
+  justify-content: center;
   margin-left: 25%;
 }
 .chik-box {
+  background-color: aqua;
+  width: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer {
   background-color: bisque;
