@@ -58,14 +58,10 @@ ul {
   color: #0e0d0d;
   font-size: 25px;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   padding: 10px;
-  text-decoration: none;
 }
 
-.active-red {
-  color: brown;
-}
+
 
 .order {
   float: left;
@@ -85,7 +81,7 @@ ul {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 .navbar a:hover,
-.order:hover .dropbtn {
+.order:hover {
   background-color: red;
 }
 
@@ -138,7 +134,7 @@ p {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 25%;
+  align-items: center;
 }
 .chik-box {
   /* background-color: aqua; */
@@ -157,6 +153,7 @@ footer {
   width: auto;
 }
 .main-block {
+  align-items: center;
   /* width: auto; */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,7 +186,7 @@ footer {
   display: flex;
   width: 250px;
   height: 250px;
-  background-color: red;
+  /* background-color: red; */
   margin: 10px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -197,9 +194,14 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .box-img {
   width: 70%;
   height: auto;
+}
+
+h1{
+  font-size: 25px;
 }

@@ -18,12 +18,14 @@
   }
 
   .main-block {
+    /* flex-direction: column; */
     width: auto;
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
   }
   .box {
+    flex-direction: column;
     width: 100px;
     height: auto;
     margin-top: 10px;
@@ -32,5 +34,9 @@
     font-size: 15px;
     justify-content: center;
     align-items: center;
+  }
+
+  h1 {
+    font-size: 18px;
   }
 }
