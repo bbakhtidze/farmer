@@ -16,7 +16,7 @@
   .chiken {
     width: 60px;
     align-items: center;
-    margin-left: 50%;
+    justify-content: center;
   }
 
   .main-block {
