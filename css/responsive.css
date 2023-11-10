@@ -1,12 +1,10 @@
 @media (max-width: 480px) {
-  .order-item {
-    /* margin-top: 150px; */
-  }
   .cover {
     width: auto;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .logo {
     align-items: center;
@@ -26,13 +24,13 @@
     padding-top: 10px;
   }
   .box {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: auto;
     margin-top: 10px;
   }
   .li-item {
     font-size: 15px;
-
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
   }
 }
