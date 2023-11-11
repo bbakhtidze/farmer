@@ -30,6 +30,10 @@
     height: auto;
     margin-top: 10px;
   }
+  .box:hover {
+    width: 120px;
+    height: auto;
+  }
   .li-item {
     font-size: 15px;
     justify-content: center;
