@@ -53,13 +53,13 @@ ul {
   justify-content: center;
 }
 
-.li-item {
+/* .li-item {
   font-family: "Noto Serif Georgian", serif;
   color: #0e0d0d;
   font-size: 25px;
   -ms-flex-wrap: wrap;
   padding: 10px;
-}
+} */
 
 .order {
   float: left;
@@ -195,7 +195,9 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-
+.box:hover {
+  width: 290px;
+}
 .box-img {
   width: 70%;
   height: auto;
@@ -203,4 +205,17 @@ footer {
 
 h1 {
   font-size: 25px;
+}
+.divfooter {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: center;
+}
+.imgfacebook {
+  width: 30px;
+  height: auto;
+  align-items: center;
+}
+.imgfacebook:hover {
+  width: 40px;
 }
