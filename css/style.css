@@ -230,11 +230,12 @@ h1 {
   justify-content: center;
 }
 .imgfacebook {
-  width: 30px;
+  width: 50px;
   height: auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 15px;
 }
 .imgfacebook:hover {
   width: 40px;
@@ -243,3 +244,10 @@ h1 {
 footer {
   margin-top: 50px;
 }
+
+/* .header-wraper {
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
