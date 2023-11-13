@@ -236,18 +236,25 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   margin-left: 15px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
 }
 .imgfacebook:hover {
-  width: 40px;
+  width: 60px;
 }
 
 footer {
   margin-top: 50px;
 }
 
-/* .header-wraper {
-  background-color: aqua;
+.imgfacebook1 {
+  width: 50px;
+  height: auto;
   position: fixed;
-  top: 0;
-  left: 0;
-} */
+  right: 100px;
+  bottom: 30px;
+}
+.imgfacebook1:hover {
+  width: 60px;
+}
