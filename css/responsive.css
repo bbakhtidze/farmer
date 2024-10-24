@@ -1,46 +1,157 @@
-@media (max-width: 480px) {
+/* ტაბლეტის ზომა */
+@media (max-width: 768px) {
   .cover {
-    width: auto;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 15px;
   }
+
   .logo {
-    align-items: center;
-    width: 30%;
-    margin: auto;
+    width: 80px;
   }
-  .chiken {
-    width: 60px;
-    align-items: center;
-    justify-content: center;
+
+  h1 {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+
+  .box {
+    width: 180px;
+    height: 180px;
+  }
+
+  .box:hover {
+    width: 200px;
   }
 
   .main-block {
-    /* flex-direction: column; */
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px;
+    gap: 15px;
+    padding: 10px;
   }
-  .box {
-    flex-direction: column;
-    width: 100px;
-    height: auto;
-    margin-top: 10px;
+}
+
+/* მობილური ზომა */
+@media (max-width: 480px) {
+  /* ჰედერის სტილები */
+  .cover {
+    padding: 10px;
+    gap: 10px;
   }
-  .box:hover {
-    width: 120px;
-    height: auto;
+
+  .logo {
+    width: 70px;
+    margin: 0;
+    transition: transform 0.2s ease;
   }
-  .li-item {
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
+
+  .logo:hover {
+    transform: scale(1.1);
   }
 
   h1 {
     font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  /* მთავარი კონტენტის სტილები */
+  .main-block {
+    padding: 5px;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .box {
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .box:hover {
+    width: 150px;
+    height: 150px;
+    transform: translateY(-5px);
+  }
+
+  .box-img {
+    width: 60%;
+    height: auto;
+  }
+
+  /* დროფდაუნის სტილები */
+  .order-content {
+    min-width: 120px;
+    right: 0;
+  }
+
+  .order {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .order-content a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* სოციალური ღილაკები */
+  .imgfacebook,
+  .imgfacebook1 {
+    width: 40px;
+    bottom: 20px;
+  }
+
+  .imgfacebook {
+    right: 20px;
+  }
+
+  .imgfacebook1 {
+    right: 70px;
+  }
+
+  .imgfacebook:hover,
+  .imgfacebook1:hover {
+    width: 45px;
+  }
+}
+
+/* პატარა მობილური ეკრანები */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .box:hover {
+    width: 130px;
+    height: 130px;
+  }
+
+  .order {
+    font-size: 14px;
+  }
+
+  .order-content a {
+    font-size: 13px;
+  }
+}
+
+/* დაბალი სიმაღლის ეკრანები */
+@media (max-height: 600px) {
+  .box {
+    height: auto;
+    min-height: 100px;
+    padding: 10px;
+  }
+
+  .imgfacebook,
+  .imgfacebook1 {
+    width: 35px;
+    bottom: 15px;
   }
 }
