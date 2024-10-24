@@ -1,36 +1,15 @@
-/* 
-  თანამედროვე CSS Reset
-  ვერსია: 1.0
-  თარიღი: 2024
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
 
-/* ძირითადი box-sizing წესები */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* html-ის ძირითადი პარამეტრები */
-html {
-  font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-  scroll-behavior: smooth;
-}
-
-/* body-ის ძირითადი პარამეტრები */
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-  text-rendering: optimizeSpeed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* ელემენტების გასუფთავება */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
@@ -38,128 +17,120 @@ h4,
 h5,
 h6,
 p,
-figure,
 blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* სიების გასუფთავება */
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* ინტერაქტიული ელემენტების გასუფთავება */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-
-/* ღილაკების სტილი */
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* ბმულების სტილი */
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* სურათების ოპტიმიზაცია */
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
 img,
-picture,
-video,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
 canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-/* ცხრილების სტილი */
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* ფორმის ელემენტების სტილი */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
+a {
+  text-decoration: none;
 }
-
-/* მონიშვნის სტილი */
-::selection {
-  background-color: #b3d4fc;
-  text-shadow: none;
-}
-
-/* სქროლბარის სტილი */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* მედია ელემენტების გასუფთავება */
-audio,
-canvas,
-embed,
-iframe,
-object,
-picture,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-/* ანიმაციების გამორთვა reduced motion-ის შემთხვევაში */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* მობილური ოპტიმიზაცია */
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
+* {
+  box-sizing: border-box;
 }
