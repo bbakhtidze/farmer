@@ -1,157 +1,99 @@
-/* ტაბლეტის ზომა */
-@media (max-width: 768px) {
-  .cover {
-    padding: 15px;
-  }
-
-  .logo {
-    width: 80px;
-  }
-
-  h1 {
-    font-size: 22px;
-    margin: 15px 0;
-  }
-
-  .box {
-    width: 180px;
-    height: 180px;
-  }
-
-  .box:hover {
-    width: 200px;
-  }
-
-  .main-block {
-    gap: 15px;
-    padding: 10px;
-  }
+/* ტექსტის ცენტრირება */
+.cover {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
-/* მობილური ზომა */
+.cover h1 {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* დროფდაუნ მენიუს სტილები */
+.order {
+  position: relative;
+  cursor: pointer;
+}
+
+.order-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+  border-radius: 4px;
+}
+
+.order-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* დროფდაუნის hover ეფექტები */
+.order:hover .order-content {
+  display: block;
+}
+
+.order-content a:hover {
+  background-color: #ddd;
+  transform: translateX(5px);
+  color: #000;
+  font-weight: 500;
+}
+
+/* ბლოკების სტილები */
+.main-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.box p {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* მობილური ვერსიისთვის */
 @media (max-width: 480px) {
-  /* ჰედერის სტილები */
   .cover {
     padding: 10px;
-    gap: 10px;
   }
 
-  .logo {
-    width: 70px;
-    margin: 0;
-    transition: transform 0.2s ease;
-  }
-
-  .logo:hover {
-    transform: scale(1.1);
-  }
-
-  h1 {
+  .cover h1 {
     font-size: 18px;
-    text-align: center;
     margin: 10px 0;
-    padding: 0 10px;
   }
 
-  /* მთავარი კონტენტის სტილები */
-  .main-block {
-    padding: 5px;
-    gap: 10px;
-    justify-content: space-around;
-  }
-
-  .box {
-    width: 140px;
-    height: 140px;
-    padding: 10px;
-    margin: 5px;
-    transition: all 0.3s ease;
-  }
-
-  .box:hover {
-    width: 150px;
-    height: 150px;
-    transform: translateY(-5px);
-  }
-
-  .box-img {
-    width: 60%;
-    height: auto;
-  }
-
-  /* დროფდაუნის სტილები */
   .order-content {
-    min-width: 120px;
-    right: 0;
-  }
-
-  .order {
-    padding: 10px;
-    font-size: 16px;
+    min-width: 140px;
   }
 
   .order-content a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-
-  /* სოციალური ღილაკები */
-  .imgfacebook,
-  .imgfacebook1 {
-    width: 40px;
-    bottom: 20px;
-  }
-
-  .imgfacebook {
-    right: 20px;
-  }
-
-  .imgfacebook1 {
-    right: 70px;
-  }
-
-  .imgfacebook:hover,
-  .imgfacebook1:hover {
-    width: 45px;
-  }
-}
-
-/* პატარა მობილური ეკრანები */
-@media (max-width: 360px) {
-  h1 {
-    font-size: 16px;
-  }
-
-  .box {
-    width: 120px;
-    height: 120px;
-  }
-
-  .box:hover {
-    width: 130px;
-    height: 130px;
-  }
-
-  .order {
-    font-size: 14px;
-  }
-
-  .order-content a {
-    font-size: 13px;
-  }
-}
-
-/* დაბალი სიმაღლის ეკრანები */
-@media (max-height: 600px) {
-  .box {
-    height: auto;
-    min-height: 100px;
     padding: 10px;
-  }
-
-  .imgfacebook,
-  .imgfacebook1 {
-    width: 35px;
-    bottom: 15px;
+    font-size: 14px;
   }
 }
