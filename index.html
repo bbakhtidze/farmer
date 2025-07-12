@@ -2,93 +2,175 @@
 <html>
   <head>
     <base target="_top">
+    <title>შეკვეთების რეგისტრაციის ფორმა</title>
     <style>
-      /* თქვენი CSS სტილები აქ */
+      /* ძირითადი სტილები */
       body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f4f4f4;
-      }
-      h1 {
-        color: #333;
-      }
-      form {
-        background-color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
         padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        max-width: 500px;
-        margin: 0 auto;
+        background-color: #f0f2f5;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        box-sizing: border-box;
       }
+
+      /* კონტეინერი ფორმისთვის */
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        max-width: 550px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 25px;
+        font-size: 28px;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 15px;
+      }
+
+      /* ფორმის ელემენტები */
       label {
         display: block;
         margin-bottom: 8px;
-        font-weight: bold;
+        font-weight: 600;
+        color: #555;
+        font-size: 15px;
       }
+
+      input[type="date"],
       input[type="text"],
       input[type="number"],
       input[type="tel"],
-      input[type="email"],
       textarea,
       select {
-        width: calc(100% - 22px); /* Padding and border */
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        box-sizing: border-box; /* Include padding in width */
+        width: calc(100% - 24px); /* Full width with padding */
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 15px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
       }
+
+      input[type="date"]:focus,
+      input[type="text"]:focus,
+      input[type="number"]:focus,
+      input[type="tel"]:focus,
+      textarea:focus,
+      select:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        outline: none;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      /* ღილაკი */
       input[type="submit"] {
-        background-color: #4CAF50;
+        background-color: #28a745; /* მწვანე ფერი */
         color: white;
-        padding: 12px 20px;
+        padding: 14px 25px;
         border: none;
-        border-radius: 4px;
+        border-radius: 6px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 18px;
+        width: 100%;
+        transition: background-color 0.3s ease, transform 0.2s ease;
       }
+
       input[type="submit"]:hover {
-        background-color: #45a049;
+        background-color: #218838; /* მუქი მწვანე */
+        transform: translateY(-2px);
       }
+
+      input[type="submit"]:active {
+        transform: translateY(0);
+      }
+
+      /* შეტყობინების დივი */
       #response {
-        margin-top: 20px;
-        padding: 10px;
-        border-radius: 4px;
-        background-color: #e0ffe0;
-        border: 1px solid #aaddaa;
-        color: #333;
-        display: none; /* Hide by default */
+        margin-top: 25px;
+        padding: 15px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+        display: none; /* ნაგულისხმევად დამალული */
+      }
+
+      #response.success {
+        background-color: #d4edda;
+        border: 1px solid #28a745;
+        color: #155724;
+      }
+
+      #response.error {
+        background-color: #f8d7da;
+        border: 1px solid #dc3545;
+        color: #721c24;
+      }
+
+      #response.loading {
+        background-color: #fff3cd;
+        border: 1px solid #ffc107;
+        color: #856404;
       }
     </style>
   </head>
   <body>
-    <h1>შეკვეთების რეგისტრაციის ფორმა</h1>
+    <div class="container">
+      <h1>შეკვეთების რეგისტრაციის ფორმა</h1>
 
-    <form id="orderForm">
-      <label for="orderDate">თარიღი:</label><br>
-      <input type="date" id="orderDate" name="orderDate" required><br>
+      <form id="orderForm">
+        <label for="orderDate">თარიღი:</label>
+        <input type="date" id="orderDate" name="orderDate" required><br>
 
-      <label for="customerName">სახელი გვარი:</label><br>
-      <input type="text" id="customerName" name="customerName" required><br>
+        <label for="customerName">სახელი გვარი:</label>
+        <input type="text" id="customerName" name="customerName" required><br>
 
-      <label for="customerPhone">ტელეფონი:</label><br>
-      <input type="tel" id="customerPhone" name="customerPhone"><br>
+        <label for="customerPhone">ტელეფონი:</label>
+        <input type="tel" id="customerPhone" name="customerPhone"><br>
 
-      <label for="quantityE">რაოდენობა (E სვეტი):</label><br>
-      <input type="number" id="quantityE" name="quantityE" value="0"><br>
+        <label for="quantityE">რაოდენობა (E სვეტი):</label>
+        <input type="number" id="quantityE" name="quantityE" value="0" min="0"><br>
 
-      <label for="quantityG">რაოდენობა (G სვეტი):</label><br>
-      <input type="number" id="quantityG" name="quantityG" value="0"><br>
+        <label for="quantityG">რაოდენობა (G სვეტი):</label>
+        <input type="number" id="quantityG" name="quantityG" value="0" min="0"><br>
 
-      <label for="notes">შენიშვნები (K სვეტი):</label><br>
-      <textarea id="notes" name="notes" rows="4"></textarea><br>
+        <label for="notes">შენიშვნები (K სვეტი):</label>
+        <textarea id="notes" name="notes" rows="4"></textarea><br>
 
-      <input type="submit" value="შეკვეთის გაგზავნა">
-    </form>
+        <input type="submit" value="შეკვეთის გაგზავნა">
+      </form>
 
-    <div id="response"></div>
+      <div id="response"></div>
+    </div>
 
     <script>
+      // DOM-ის ჩატვირთვის შემდეგ
+      document.addEventListener('DOMContentLoaded', function() {
+        // დღევანდელი თარიღის ავტომატურად შევსება
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+        var yyyy = today.getFullYear();
+        document.getElementById('orderDate').value = yyyy + '-' + mm + '-' + dd;
+      });
+
       document.getElementById('orderForm').addEventListener('submit', function(e) {
         e.preventDefault(); // შეაჩერეთ ფორმის ნაგულისხმევი გაგზავნა
 
@@ -102,28 +184,30 @@
           notes: form.notes.value
         };
 
-        // აჩვენეთ "გზავნის..." შეტყობინება
         var responseDiv = document.getElementById('response');
         responseDiv.style.display = 'block';
-        responseDiv.style.backgroundColor = '#ffffcc'; // ყვითელი ფონი
-        responseDiv.style.borderColor = '#dddd77';
-        responseDiv.textContent = 'შეკვეთა იგზავნება...';
+        responseDiv.className = 'loading'; // დაამატეთ loading კლასი
+        responseDiv.textContent = 'შეკვეთა იგზავნება... გთხოვთ დაელოდოთ...';
 
         // გამოიძახეთ Apps Script ფუნქცია
         google.script.run
           .withSuccessHandler(function(res) {
-            responseDiv.style.backgroundColor = '#e0ffe0'; // მწვანე ფონი
-            responseDiv.style.borderColor = '#aaddaa';
+            responseDiv.className = 'success'; // დაამატეთ success კლასი
             responseDiv.textContent = res; // აჩვენეთ სერვერიდან მიღებული შეტყობინება
             form.reset(); // გაასუფთავეთ ფორმა წარმატების შემდეგ
+            // დღევანდელი თარიღის ხელახლა შევსება ფორმის გასუფთავების შემდეგ
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0');
+            var yyyy = today.getFullYear();
+            document.getElementById('orderDate').value = yyyy + '-' + mm + '-' + dd;
           })
           .withFailureHandler(function(error) {
-            responseDiv.style.backgroundColor = '#ffe0e0'; // წითელი ფონი
-            responseDiv.style.borderColor = '#ddaaaa';
+            responseDiv.className = 'error'; // დაამატეთ error კლასი
             responseDiv.textContent = 'შეცდომა: ' + error.message; // აჩვენეთ შეცდომის შეტყობინება
             console.error("Error submitting form:", error);
           })
-          .processForm(formData); // ეს ფუნქცია უნდა შექმნათ Code.gs-ში
+          .processForm(formData); // ეს ფუნქცია უნდა იყოს Code.gs-ში
       });
     </script>
   </body>
