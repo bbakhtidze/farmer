@@ -1,158 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="image/logo.svg" />
-    <title>მეფრინველეობის ფერმა ზესტაფონში</title>
+    <base target="_top">
+    <style>
+      /* თქვენი CSS სტილები აქ */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        color: #333;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="tel"],
+      input[type="email"],
+      textarea,
+      select {
+        width: calc(100% - 22px); /* Padding and border */
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box; /* Include padding in width */
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      #response {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #e0ffe0;
+        border: 1px solid #aaddaa;
+        color: #333;
+        display: none; /* Hide by default */
+      }
+    </style>
   </head>
   <body>
-    <header class="header-wraper">
-      <div class="cover">
-        <a href="https://bbakhtidze.github.io/farmer/"
-          ><img class="logo" src="image/logo.svg" alt="logo"
-        /></a>
-        <h1>მეფრინველეობის ფერმა ზესტაფონში</h1>
-        </div>
-    </header>
-    <section>
-      <div class="main-block">
-        <div class="box">
-          <a href=""></a>
-          <img class="box-img" src="image/order1.png" alt="order1" />
-          <div class="order">
-            <p>შეკვეთა</p>
-            <div class="order-content">
-              <a
-                class="order"
-                href="https://docs.google.com/spreadsheets/d/1ALJAYQh79oKZFhlV1XvxflaUwPffRPtf/edit?gid=666434717#gid=666434717"
-                target="_blank"
-                >განრიგი
-              </a>
-              <a
-                class="order"
-                href="https://docs.google.com/spreadsheets/d/1ALJAYQh79oKZFhlV1XvxflaUwPffRPtf/edit?gid=2112100794#gid=2112100794"
-                target="_blank"
-                >ქულა ზესტ
-              </a>
-              <a
-                class="order"
-                href="https://docs.google.com/spreadsheets/d/1ALJAYQh79oKZFhlV1XvxflaUwPffRPtf/edit?gid=96546644#gid=96546644"
-                target="_blank"
-                >ქულა ზუგდ</a
-              >
-              <a
-                class="order"
-                href="https://docs.google.com/spreadsheets/d/1ALJAYQh79oKZFhlV1XvxflaUwPffRPtf/edit?gid=1260216343#gid=1260216343"
-                target="_blank"
-                >ზესტაფონი</a
-              >
-              <a
-                class="order"
-                href="https://docs.google.com/spreadsheets/d/1ALJAYQh79oKZFhlV1XvxflaUwPffRPtf/edit?gid=1754183854#gid=1754183854"
-                target="_blank"
-                >ქუთაისი</a
-              >
-              <a
-                class="order"
-                href="https://docs.google.com/spreadsheets/d/1ALJAYQh79oKZFhlV1XvxflaUwPffRPtf/edit?gid=1161599254#gid=1161599254"
-                target="_blank"
-                >ზუგდიდი</a
-              >
-              <a
-                class="order"
-                href="https://script.google.com/macros/s/AKfycbweFe0DE7utrp_pG8SF0itZUTdvv4QN5yZZqnWt4UXl3lQA8FIEUygxsV-9CkoxdeKY/exec"
-                target="_blank"
-                >ახალი შეკვეთა (მობილური)
-              </a>
-              </div>
-          </div>
-        </div>
-        <a
-          href="https://docs.google.com/spreadsheets/d/1ALJAYQh79oKZFhlV1XvxflaUwPffRPtf/edit?usp=sharing&ouid=109595026268117277969&rtpof=true&sd=true"
-          target="_blank"
-          ><div class="box">
-            <img class="box-img" src="image/balance.png" alt="accaunt" /> 
-            <p>ანგარიშგება</p>
-          </div></a
-        >
-      </div>
-      <div class="main-block">
-        <div class="box">
-          <img class="box-img" src="image/old.png" alt="imageold" />
-          <div class="order">
-            <p>ძველი ფორმები</p>
-            <div class="order-content">
-              <a
-                class="order"
-                href="https://docs.google.com/spreadsheets/d/1gWV9bAPeTmnJW25QGd0VkrIqa6cMCvwG/edit?gid=979962929#gid=979962929"
-                target="_blank"
-                >2024 
-              </a>
-              <a
-                class="order"
-                href="https://docs.google.com/spreadsheets/d/1lOQX2s78ez_mN35zSOHJIUMbwXa9rOrC/edit?usp=drive_link&ouid=109595026268117277969&rtpof=true&sd=true"
-                target="_blank"
-                target="_blank"
-                >2023</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <a
-          href="https://docs.google.com/spreadsheets/d/1Qj1Em8PJADdgQwZb_SbEiXTbrDocKshNnevILUyed30/edit?gid=457485638#gid&range=A1"
-          target="_blank"
-          ><div class="box">
-          <img class="box-img" src="image/search.png" alt="search" />
-          <p>ძ ე ბ ნ ა </p>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="weather-bar">
-        <div
-          id="ww_f26a054d6f4e0"
-          v="1.3"
-          loc="id"
-          a='{"t":"responsive","lang":"ka","sl_lpl":1,"ids":["wl11847"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'
-        >
-          More forecasts:
-          <a
-            href="https://wetterlang.de/wetter_21_tage/"
-            id="ww_f26a054d6f4e0_u"
-            target="_blank"
-            >Wettervorhersage 21 tage</a
-          >
-        </div>
-        <script
-          async
-          src="https://app2.weatherwidget.org/js/?id=ww_f26a054d6f4e0"
-        ></script>
-      </div>
-    </section>
-</body>
-  <footer>
-    <div class="divfooter">
-      <a
-        href="https://business.facebook.com/latest/inbox/all?bpn_id=876732439363204&asset_id=105111904196154&nav_ref=manage_page_ap_plus_inbox_message_button&mailbox_id=&selected_item_id=100082639340794"
-        target="_blank"
-      >
-        <img class="imgfacebook" src="image/chat.png" alt="chat icon"
-      /></a>
-      <a href="https://www.facebook.com/farmer.chickenfarm" target="_blank">
-        <img class="imgfacebook1" src="image/facebook.svg" alt="imgfacebook" />
-      </a>
-    </div>
-  </footer>
+    <h1>შეკვეთების რეგისტრაციის ფორმა</h1>
+
+    <form id="orderForm">
+      <label for="orderDate">თარიღი:</label><br>
+      <input type="date" id="orderDate" name="orderDate" required><br>
+
+      <label for="customerName">სახელი გვარი:</label><br>
+      <input type="text" id="customerName" name="customerName" required><br>
+
+      <label for="customerPhone">ტელეფონი:</label><br>
+      <input type="tel" id="customerPhone" name="customerPhone"><br>
+
+      <label for="quantityE">რაოდენობა (E სვეტი):</label><br>
+      <input type="number" id="quantityE" name="quantityE" value="0"><br>
+
+      <label for="quantityG">რაოდენობა (G სვეტი):</label><br>
+      <input type="number" id="quantityG" name="quantityG" value="0"><br>
+
+      <label for="notes">შენიშვნები (K სვეტი):</label><br>
+      <textarea id="notes" name="notes" rows="4"></textarea><br>
+
+      <input type="submit" value="შეკვეთის გაგზავნა">
+    </form>
+
+    <div id="response"></div>
+
+    <script>
+      document.getElementById('orderForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // შეაჩერეთ ფორმის ნაგულისხმევი გაგზავნა
+
+        var form = e.target;
+        var formData = {
+          orderDate: form.orderDate.value,
+          customerName: form.customerName.value,
+          customerPhone: form.customerPhone.value,
+          quantityE: form.quantityE.value,
+          quantityG: form.quantityG.value,
+          notes: form.notes.value
+        };
+
+        // აჩვენეთ "გზავნის..." შეტყობინება
+        var responseDiv = document.getElementById('response');
+        responseDiv.style.display = 'block';
+        responseDiv.style.backgroundColor = '#ffffcc'; // ყვითელი ფონი
+        responseDiv.style.borderColor = '#dddd77';
+        responseDiv.textContent = 'შეკვეთა იგზავნება...';
+
+        // გამოიძახეთ Apps Script ფუნქცია
+        google.script.run
+          .withSuccessHandler(function(res) {
+            responseDiv.style.backgroundColor = '#e0ffe0'; // მწვანე ფონი
+            responseDiv.style.borderColor = '#aaddaa';
+            responseDiv.textContent = res; // აჩვენეთ სერვერიდან მიღებული შეტყობინება
+            form.reset(); // გაასუფთავეთ ფორმა წარმატების შემდეგ
+          })
+          .withFailureHandler(function(error) {
+            responseDiv.style.backgroundColor = '#ffe0e0'; // წითელი ფონი
+            responseDiv.style.borderColor = '#ddaaaa';
+            responseDiv.textContent = 'შეცდომა: ' + error.message; // აჩვენეთ შეცდომის შეტყობინება
+            console.error("Error submitting form:", error);
+          })
+          .processForm(formData); // ეს ფუნქცია უნდა შექმნათ Code.gs-ში
+      });
+    </script>
+  </body>
 </html>
