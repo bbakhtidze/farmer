@@ -206,4 +206,41 @@
       </a>
     </div>
   </footer>
+  <script>
+      document.getElementById('orderForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // ბრაუზერის ნაგულისხმევი გაგზავნის პრევენცია
+
+        var form = e.target;
+        var formData = {
+          name: form.name.value,
+          surname: form.surname.value,
+          phone: form.phone.value,
+          product: form.product.value, // ახლა ეს იქნება select-ის მნიშვნელობა
+          quantity: form.quantity.value,
+          destinationSheet: form.destinationSheet.value
+        };
+
+        var responseDiv = document.getElementById('responseMessage');
+        responseDiv.textContent = 'მონაცემების გაგზავნა...';
+        responseDiv.style.color = 'blue';
+
+        // google.script.run გამოიძახებს Apps Script ფუნქციას
+        google.script.run
+          .withSuccessHandler(function(response) {
+            if (response.success) {
+              responseDiv.textContent = 'შეკვეთა წარმატებით გაიგზავნა!';
+              responseDiv.style.color = 'green';
+              form.reset(); // ფორმის გასუფთავება
+            } else {
+              responseDiv.textContent = 'შეცდომა: ' + response.message;
+              responseDiv.style.color = 'red';
+            }
+          })
+          .withFailureHandler(function(error) {
+            responseDiv.textContent = 'შეცდომა გაგზავნისას: ' + error.message;
+            responseDiv.style.color = 'red';
+          })
+          .processOrderForm(formData); // გამოძახება Apps Script ფუნქციის
+      });
+    </script>
 </html>
