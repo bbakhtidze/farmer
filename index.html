@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base target="_top"> <!-- აუცილებელია Apps Script Web App-ებისთვის -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- გარე CSS ფაილები უნდა იყოს აბსოლუტური URL-ებით -->
-    <link rel="stylesheet" href="https://bbakhidze.github.io/farmer/css/reset.css" />
-    <link rel="stylesheet" href="https://bbakhidze.github.io/farmer/css/style.css" />
-    <link rel="stylesheet" href="https://bbakhidze.github.io/farmer/css/responsive.css" />
+    <!-- CSS ფაილები ფარდობითი გზებით GitHub Pages-ისთვის -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,8 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@600&display=swap"
       rel="stylesheet"
     />
-    <!-- ხატულა ასევე საჭიროებს სრულ URL-ს -->
-    <link rel="icon" href="https://bbakhidze.github.io/farmer/image/logo.svg" />
+    <!-- ხატულა ფარდობითი გზით GitHub Pages-ისთვის -->
+    <link rel="icon" href="image/logo.svg" />
     
     <title>მეფრინველეობის ფერმა ზესტაფონში</title>
   </head>
@@ -24,7 +23,8 @@
     <header class="header-wraper">
       <div class="cover">
         <a href="https://bbakhidze.github.io/farmer/"
-          ><img class="logo" src="https://bbakhidze.github.io/farmer/image/logo.svg" alt="logo"
+          ><!-- სურათი ფარდობითი გზით GitHub Pages-ისთვის -->
+          <img class="logo" src="image/logo.svg" alt="logo"
         /></a>
         <h1>მეფრინველეობის ფერმა ზესტაფონში</h1>
       </div>
@@ -33,7 +33,8 @@
       <div class="main-block">
         <div class="box">
           <a href=""></a>
-          <img class="box-img" src="https://bbakhidze.github.io/farmer/image/order1.png" alt="order1" />
+          <!-- სურათი ფარდობითი გზით GitHub Pages-ისთვის -->
+          <img class="box-img" src="image/order1.png" alt="order1" />
           <div class="order">
             <p>შეკვეთა</p>
             <div class="order-content">
@@ -80,14 +81,16 @@
           href="https://docs.google.com/spreadsheets/d/1ALJAYQh79oKZFhlV1XvxflaUwPffRPtf/edit?usp=sharing&ouid=109595026268117277969&rtpof=true&sd=true"
           target="_blank"
           ><div class="box">
-            <img class="box-img" src="https://bbakhidze.github.io/farmer/image/balance.png" alt="accaunt" />
+            <!-- სურათი ფარდობითი გზით GitHub Pages-ისთვის -->
+            <img class="box-img" src="image/balance.png" alt="accaunt" />
             <p>ანგარიშგება</p>
           </div></a
         >
       </div>
       <div class="main-block">
         <div class="box">
-          <img class="box-img" src="https://bbakhidze.github.io/farmer/image/old.png" alt="imageold" />
+          <!-- სურათი ფარდობითი გზით GitHub Pages-ისთვის -->
+          <img class="box-img" src="image/old.png" alt="imageold" />
           <div class="order">
             <p>ძველი ფორმები</p>
             <div class="order-content">
@@ -111,7 +114,8 @@
           href="https://docs.google.com/spreadsheets/d/1Qj1Em8PJADdgQwZb_SbEiXTbrDocKshNnevILUyed30/edit?gid=457485638#gid&range=A1"
           target="_blank"
           ><div class="box">
-          <img class="box-img" src="https://bbakhidze.github.io/farmer/image/search.png" alt="search" />
+          <!-- სურათი ფარდობითი გზით GitHub Pages-ისთვის -->
+          <img class="box-img" src="image/search.png" alt="search" />
           <p>ძ ე ბ ნ ა </p>
           </a>
         </div>
@@ -192,15 +196,19 @@
           href="https://business.facebook.com/latest/inbox/all?bpn_id=876732439363204&asset_id=105111904196154&nav_ref=manage_page_ap_plus_inbox_message_button&mailbox_id=&selected_item_id=100082639340794"
           target="_blank"
         >
-          <img class="imgfacebook" src="https://bbakhidze.github.io/farmer/image/chat.png" alt="chat icon"
+          <!-- სურათი ფარდობითი გზით GitHub Pages-ისთვის -->
+          <img class="imgfacebook" src="image/chat.png" alt="chat icon"
         /></a>
         <a href="https://www.facebook.com/farmer.chickenfarm" target="_blank">
-          <img class="imgfacebook1" src="https://bbakhidze.github.io/farmer/image/facebook.svg" alt="imgfacebook" />
+          <!-- სურათი ფარდობითი გზით GitHub Pages-ისთვის -->
+          <img class="imgfacebook1" src="image/facebook.svg" alt="imgfacebook" />
         </a>
       </div>
     </footer>
 
     <script>
+      // ეს JavaScript კოდი არ იმუშავებს GitHub Pages-ზე, რადგან ის იყენებს google.script.run-ს.
+      // ის განკუთვნილია მხოლოდ Google Apps Script Web App-ისთვის.
       document.getElementById('orderForm').addEventListener('submit', function(e) {
         e.preventDefault(); // ბრაუზერის ნაგულისხმევი გაგზავნის პრევენცია
 
@@ -209,7 +217,7 @@
           name: form.name.value,
           surname: form.surname.value,
           phone: form.phone.value,
-          product: form.product.value, // ახლა ეს იქნება select-ის მნიშვნელობა
+          product: form.product.value,
           quantity: form.quantity.value,
           destinationSheet: form.destinationSheet.value
         };
@@ -219,6 +227,7 @@
         responseDiv.style.color = 'blue';
 
         // google.script.run გამოიძახებს Apps Script ფუნქციას
+        // ეს ხაზი შეცდომას გამოიწვევს GitHub Pages-ზე, რადგან google.script.run არ არსებობს.
         google.script.run
           .withSuccessHandler(function(response) {
             if (response.success) {
