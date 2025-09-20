@@ -1,26 +1,26 @@
 @media (max-width: 480px) {
+  /* Mobile styles (screens up to 480px) */
   .cover {
-    display: flex; /* Makes the container a flexbox */
-    flex-direction: column; /* Stacks the child elements vertically */
-    align-items: center; /* Centers the child elements horizontally */
-    text-align: center; /* Centers text within the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .logo {
-    width: 25%; /* Adjusts the logo's size for mobile screens */
-    margin-bottom: 10px; /* Adds space between the logo and the title */
+    width: 25%;
+    margin-bottom: 10px;
   }
 
   h1 {
-    font-size: 16px; /* Reduces the font size of the title */
-    padding: 0 5px; /* Adds a little padding to the sides */
+    font-size: 16px;
+    padding: 0 5px;
   }
-}
 
-  /* ძირითადი ბლოკები */
   .main-block {
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
   .box {
@@ -37,7 +37,6 @@
     width: 60%;
   }
 
-  /* ფუტერი */
   .divfooter {
     flex-direction: column;
     align-items: center;
@@ -47,5 +46,28 @@
   .imgfacebook1 {
     position: static;
     margin: 10px;
+  }
+}
+
+@media (min-width: 481px) {
+  /* Desktop styles (screens 481px and larger) */
+  .main-block {
+    display: flex;
+    flex-direction: row; /* Arranges the boxes in a row */
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .box {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    /* Other box styles are in style.css */
+  }
+
+  .box:hover {
+    width: 290px;
   }
 }
