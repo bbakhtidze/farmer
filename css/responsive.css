@@ -1,49 +1,54 @@
 @media (max-width: 480px) {
-  /* ჰედერისთვის */
+  /* ჰედერის ელემენტები */
   .header-wraper {
     padding: 10px;
   }
   .cover {
-    width: 100%;
     display: flex;
-    flex-direction: column; /* ელემენტები ვერტიკალურად დალაგდება */
-    align-items: center; /* ცენტრში გასწორება */
-    text-align: center; /* ტექსტის ცენტრში გასწორება */
+    flex-direction: column; /* ელემენტები ერთმანეთის ქვეშ დალაგდება */
+    align-items: center; /* ცენტრში გასწორდება */
+    text-align: center; /* ტექსტი ცენტრში გასწორდება */
   }
 
   .logo {
-    width: 30%;
-    margin-bottom: 10px; /* დაშორება სათაურისგან */
+    width: 25%; /* ლოგოს ზომა შემცირდება */
+    margin-bottom: 10px;
   }
 
   h1 {
-    font-size: 18px;
-    padding: 0 10px; /* პატარა დაშორება გვერდებიდან */
+    font-size: 16px; /* სათაურის ზომა შემცირდება */
+    padding: 0 5px;
   }
 
-  /* ძირითადი ბლოკებისთვის */
+  /* ძირითადი ბლოკები */
   .main-block {
-    width: 100%;
-    flex-direction: column; /* ბლოკები ვერტიკალურად განლაგდება */
-    align-items: center; /* ბლოკების ცენტრში გასწორება */
-    padding-top: 10px;
+    flex-direction: column; /* ბლოკები ერთმანეთის ქვეშ დალაგდება */
+    align-items: center; /* მთლიანი ბლოკი ცენტრში გასწორდება */
   }
 
   .box {
-    width: 80%; /* ბლოკის სიგანე ეკრანის 80%-ს დაიკავებს */
-    max-width: 200px; /* მაგრამ არ გასცდება 200px-ს, რომ ზედმეტად არ გაიზარდოს */
+    width: 150px; /* თითოეული ბლოკის ზომა შემცირდება */
     height: auto;
-    margin-bottom: 20px; /* დაშორება ბლოკებს შორის */
-    flex-direction: column; /* შიგნით არსებული ელემენტები ვერტიკალურად განლაგდება */
-    align-items: center; /* შიგნით არსებული ელემენტები ცენტრში გასწორდება */
+    margin: 10px 0;
   }
 
   .box:hover {
-    width: 85%; /* Hover ეფექტი ოდნავ გაზრდის ბლოკს */
+    width: 160px; /* hover ეფექტი ოდნავ გაზრდის ბლოკს */
   }
 
   .box-img {
-    width: 60%; /* სურათის ზომის ოპტიმიზაცია */
-    height: auto;
+    width: 60%; /* სურათის ზომა შემცირდება, რათა უკეთესი იყოს მობილურზე */
+  }
+
+  /* ფუტერი */
+  .divfooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgfacebook,
+  .imgfacebook1 {
+    position: static; /* მოძრავი ხატულები დაფიქსირებული პოზიციიდან შეიცვლება */
+    margin: 10px; /* დაშორება დაემატება */
   }
 }
