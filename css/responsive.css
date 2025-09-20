@@ -1,46 +1,49 @@
 @media (max-width: 480px) {
+  /* ჰედერისთვის */
+  .header-wraper {
+    padding: 10px;
+  }
   .cover {
-    width: auto;
-    align-items: center;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .logo {
-    align-items: center;
-    width: 30%;
-    margin: auto;
-  }
-  .chiken {
-    width: 60px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* ელემენტები ვერტიკალურად დალაგდება */
+    align-items: center; /* ცენტრში გასწორება */
+    text-align: center; /* ტექსტის ცენტრში გასწორება */
   }
 
-  .main-block {
-    /* flex-direction: column; */
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px;
-  }
-  .box {
-    flex-direction: column;
-    width: 100px;
-    height: auto;
-    margin-top: 10px;
-  }
-  .box:hover {
-    width: 120px;
-    height: auto;
-  }
-  .li-item {
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
+  .logo {
+    width: 30%;
+    margin-bottom: 10px; /* დაშორება სათაურისგან */
   }
 
   h1 {
     font-size: 18px;
+    padding: 0 10px; /* პატარა დაშორება გვერდებიდან */
+  }
+
+  /* ძირითადი ბლოკებისთვის */
+  .main-block {
+    width: 100%;
+    flex-direction: column; /* ბლოკები ვერტიკალურად განლაგდება */
+    align-items: center; /* ბლოკების ცენტრში გასწორება */
+    padding-top: 10px;
+  }
+
+  .box {
+    width: 80%; /* ბლოკის სიგანე ეკრანის 80%-ს დაიკავებს */
+    max-width: 200px; /* მაგრამ არ გასცდება 200px-ს, რომ ზედმეტად არ გაიზარდოს */
+    height: auto;
+    margin-bottom: 20px; /* დაშორება ბლოკებს შორის */
+    flex-direction: column; /* შიგნით არსებული ელემენტები ვერტიკალურად განლაგდება */
+    align-items: center; /* შიგნით არსებული ელემენტები ცენტრში გასწორდება */
+  }
+
+  .box:hover {
+    width: 85%; /* Hover ეფექტი ოდნავ გაზრდის ბლოკს */
+  }
+
+  .box-img {
+    width: 60%; /* სურათის ზომის ოპტიმიზაცია */
+    height: auto;
   }
 }
