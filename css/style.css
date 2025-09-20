@@ -1,11 +1,6 @@
 /*
- * Autoprefixer-ის მიერ დაგენერირებული ვერსია
- * Browsers: last 4 version
+ * ძირითადი სტილები
  */
-
-/*
-* ძირითადი სტილები
-*/
 
 body {
   font-family: "Noto Serif Georgian", serif;
@@ -16,8 +11,8 @@ h1 {
 }
 
 /*
-* ჰედერი
-*/
+ * ჰედერი
+ */
 .cover {
   width: auto;
   display: flex;
@@ -33,68 +28,8 @@ h1 {
 }
 
 /*
-* ნავიგაცია (კომენტარებიდან ამოვიღე, რადგან HTML-შიც კომენტარებში გაქვთ)
-*/
-/*
-.navbar,
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.order {
-  float: left;
-  overflow: hidden;
-  margin: 10px;
-}
-
-.order {
-  font-size: 18px;
-  border: none;
-  outline: none;
-  padding: 14px 16px;
-  margin: 0;
-}
-
-.navbar a:hover,
-.order:hover {
-  background-color: red;
-}
-
-.order-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.order-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.order:hover .order-content {
-  display: block;
-}
-
-.order-content a:hover {
-  background-color: #ddd;
-}
-*/
-
-/*
-* ძირითადი სექცია
-*/
+ * ძირითადი სექცია
+ */
 .main-block {
   margin-top: 20px;
   align-items: center;
@@ -128,8 +63,8 @@ ul {
 }
 
 /*
-* ფუტერი
-*/
+ * ფუტერი
+ */
 footer {
   margin-top: 50px;
 }
@@ -167,8 +102,8 @@ footer {
 }
 
 /*
-* სხვა ელემენტები
-*/
+ * სხვა ელემენტები
+ */
 .chiken {
   width: 250px;
 }
