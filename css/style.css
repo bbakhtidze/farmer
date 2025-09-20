@@ -1,72 +1,50 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+ * Autoprefixer-ის მიერ დაგენერირებული ვერსია
+ * Browsers: last 4 version
+ */
 
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* ძირითადი სტილები
 */
 
+body {
+  font-family: "Noto Serif Georgian", serif;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+/*
+* ჰედერი
+*/
 .cover {
-  /* background-image: url("../image/cover.jpg");
-  background-repeat: no-repeat;
-  background-color: black;
-  position: relative; */
   width: auto;
-  /* height: auto; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /* background-color: aqua; */
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .logo {
-  /* background-color: aqua; */
-  display: inline-block;
+  display: flex;
   width: 120px;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
+/*
+* ნავიგაცია (კომენტარებიდან ამოვიღე, რადგან HTML-შიც კომენტარებში გაქვთ)
+*/
+/*
 .navbar,
 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 10px;
   padding: 10px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
-
-/* .li-item {
-  font-family: "Noto Serif Georgian", serif;
-  color: #0e0d0d;
-  font-size: 25px;
-  -ms-flex-wrap: wrap;
-  padding: 10px;
-} */
 
 .order {
   float: left;
@@ -74,34 +52,28 @@ ul {
   margin: 10px;
 }
 
-/* Dropdown button */
 .order {
   font-size: 18px;
   border: none;
   outline: none;
-  /* color: white; */
   padding: 14px 16px;
-  /* background-color: inherit;
-  font-family: inherit; Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  margin: 0;
 }
+
 .navbar a:hover,
 .order:hover {
   background-color: red;
 }
 
-/* Dropdown content (hidden by default) */
 .order-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .order-content a {
   float: none;
   color: black;
@@ -111,141 +83,75 @@ ul {
   text-align: left;
 }
 
-/* Show the dropdown menu on hover */
 .order:hover .order-content {
   display: block;
-  Add
-    a
-    grey
-    background
-    color
-    to
-    dropdown
-    links
-    on
-    hover
-    .order-content
-    .a:hover:hover {
-    background-color: #ddd;
-  }
 }
 
-.chiken {
-  width: 250px;
-  /* margin-left: 25%;
-  margin-top: 10%; */
+.order-content a:hover {
+  background-color: #ddd;
 }
-p {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.chik-box {
-  /* background-color: aqua; */
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 10px;
-}
-footer {
-  /* background-color: bisque; */
-  height: 30px;
-  width: auto;
-}
+*/
+
+/*
+* ძირითადი სექცია
+*/
 .main-block {
   margin-top: 20px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  /* width: auto; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /* padding-top: 30px; */
-  /* background-color: aquamarine; */
 }
 
-.order-icon {
-  width: 20px;
-}
-
-/* .button {
-  width: auto;
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(250, 250, 250);
-  flex-wrap: wrap;
-} */
 .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 250px;
   height: 250px;
-  /* background-color: red; */
   margin: 10px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
+  text-align: center;
 }
+
 .box:hover {
   width: 290px;
 }
+
 .box-img {
   width: 70%;
   height: auto;
 }
 
-h1 {
-  font-size: 25px;
+.box p {
+  margin-top: 10px;
 }
+
+/*
+* ფუტერი
+*/
+footer {
+  margin-top: 50px;
+}
+
 .divfooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: antiquewhite;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
+
 .imgfacebook {
   width: 50px;
   height: auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-left: 15px;
   position: fixed;
   right: 30px;
   bottom: 30px;
 }
+
 .imgfacebook:hover {
   width: 60px;
-}
-
-footer {
-  margin-top: 50px;
 }
 
 .imgfacebook1 {
@@ -255,27 +161,18 @@ footer {
   right: 100px;
   bottom: 30px;
 }
+
 .imgfacebook1:hover {
   width: 60px;
 }
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
+/*
+* სხვა ელემენტები
+*/
+.chiken {
+  width: 250px;
 }
 
-.box p {
-  margin-top: 10px; /* სურათსა და ტექსტს შორის დაშორება */
-}
-/* .header-wraper {
-  position: fixed;
-  width: 100%;
-  top: 0;
-} */
-
-/* .weather-bar {
+.weather-bar {
   margin-top: 10px;
-  background-color: aqua;
-} */
+}
