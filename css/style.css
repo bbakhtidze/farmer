@@ -258,7 +258,17 @@ footer {
 .imgfacebook1:hover {
   width: 60px;
 }
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
+.box p {
+  margin-top: 10px; /* სურათსა და ტექსტს შორის დაშორება */
+}
 /* .header-wraper {
   position: fixed;
   width: 100%;
