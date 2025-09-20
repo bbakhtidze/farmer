@@ -1,20 +1,19 @@
 @media (max-width: 480px) {
-  /* ჰედერისთვის */
   .cover {
-    display: flex;
-    flex-direction: column; /* ელემენტები ერთმანეთის ქვეშ განლაგდება */
-    align-items: center; /* ცენტრში გასწორდება */
-    text-align: center; /* ტექსტი ცენტრში გასწორდება */
+    display: flex; /* Makes the container a flexbox */
+    flex-direction: column; /* Stacks the child elements vertically */
+    align-items: center; /* Centers the child elements horizontally */
+    text-align: center; /* Centers text within the container */
   }
 
   .logo {
-    width: 25%; /* ლოგოს ზომა შემცირდება */
-    margin-bottom: 10px; /* სათაურისგან დაშორება */
+    width: 25%; /* Adjusts the logo's size for mobile screens */
+    margin-bottom: 10px; /* Adds space between the logo and the title */
   }
 
   h1 {
-    font-size: 16px; /* სათაურის ზომა შემცირდება */
-    padding: 0 5px; /* დაშორება გვერდებიდან */
+    font-size: 16px; /* Reduces the font size of the title */
+    padding: 0 5px; /* Adds a little padding to the sides */
   }
 }
 
