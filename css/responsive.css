@@ -5,39 +5,39 @@
   }
   .cover {
     display: flex;
-    flex-direction: column; /* ელემენტები ერთმანეთის ქვეშ დალაგდება */
-    align-items: center; /* ცენტრში გასწორდება */
-    text-align: center; /* ტექსტი ცენტრში გასწორდება */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .logo {
-    width: 25%; /* ლოგოს ზომა შემცირდება */
+    width: 25%;
     margin-bottom: 10px;
   }
 
   h1 {
-    font-size: 16px; /* სათაურის ზომა შემცირდება */
+    font-size: 16px;
     padding: 0 5px;
   }
 
   /* ძირითადი ბლოკები */
   .main-block {
-    flex-direction: column; /* ბლოკები ერთმანეთის ქვეშ დალაგდება */
-    align-items: center; /* მთლიანი ბლოკი ცენტრში გასწორდება */
+    flex-direction: column;
+    align-items: center;
   }
 
   .box {
-    width: 150px; /* თითოეული ბლოკის ზომა შემცირდება */
+    width: 150px;
     height: auto;
     margin: 10px 0;
   }
 
   .box:hover {
-    width: 160px; /* hover ეფექტი ოდნავ გაზრდის ბლოკს */
+    width: 160px;
   }
 
   .box-img {
-    width: 60%; /* სურათის ზომა შემცირდება, რათა უკეთესი იყოს მობილურზე */
+    width: 60%;
   }
 
   /* ფუტერი */
@@ -48,7 +48,7 @@
 
   .imgfacebook,
   .imgfacebook1 {
-    position: static; /* მოძრავი ხატულები დაფიქსირებული პოზიციიდან შეიცვლება */
-    margin: 10px; /* დაშორება დაემატება */
+    position: static;
+    margin: 10px;
   }
 }
